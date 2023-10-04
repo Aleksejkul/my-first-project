@@ -1,0 +1,26 @@
+//калькулятор
+import java.util.Scanner; // делает возможность использовать Scanner
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите числа"); // строка для выведения текста
+        int a = sc.nextInt(); // создания трех переменных для ввода цифр  пользователя
+        int b = sc.nextInt();
+        int f=0;
+        System.out.println("Выберите действия");
+        Scanner sc1 = new Scanner(System.in);
+        String c = sc1.nextLine();
+// определение границ  испоьзование 
+        if (c.equals("+")) { 
+            f = a + b;
+        } else if (c.equals("-")) {
+            f = a - b;
+        } else if (c.equals("/")) {
+            f = a/b;
+        }
+        else if (c.equals("*")) {
+            f = a*b;
+        }
+        System.out.println(f); // вывод конечного результата
+    }
+}
